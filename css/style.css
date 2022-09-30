@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  height: 100vh;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.faq-component {
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-left: 19rem;
+}
+.faq-component img {
+  transform: translate(-39rem, -19rem);
+}
+.faq-component #illustration img {
+  max-width: 80%;
+  height: auto;
+  margin-left: 33rem;
+  margin-top: -36rem;
+  padding-bottom: 16rem;
+}
+
+.box img {
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  margin-left: 13rem;
+  margin-top: -16.2rem;
+  padding-bottom: 7rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  margin-left: 46rem;
+  margin-top: -29rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.text img {
+  width: 12px;
+  height: auto;
+  margin-left: 25rem;
+}
+.text img :hover {
+  cursor: pointer;
+}
+.text #faq {
+  font-weight: 700;
+}
+.text #q1,
+.text #q2,
+.text #q3,
+.text #q4,
+.text #q5 {
+  font-weight: 400;
+  font-size: small;
+}
+.text #a1,
+.text #a2,
+.text #a3,
+.text #a4,
+.text #a5 {
+  font-size: small;
+}
+.text hr {
+  border: 0.5px solid lightgrey;
+  width: 28rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}

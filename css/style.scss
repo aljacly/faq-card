@@ -1,0 +1,114 @@
+$font-size : 11px;
+$link-color :hsl(228, 45%, 44%);
+$violetgradient: hsl(273, 75%, 66%);
+$bluegradient: hsl(240, 73%, 65%);
+
+$bg-color: purple;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    height: 100vh; //fill in entire page
+    background-image: linear-gradient($violetgradient, $bluegradient);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.faq-component {
+    width: 50vw;
+    height: 50vh; //increased the height to include the img
+    background-color: white;
+    overflow: hidden; //trim off excess img
+    border-radius: 1rem;
+    margin-left: 19rem;
+
+    img {
+        //kept the original width and height of the img, just shifted to the left and upward
+        transform: translate(-39rem, -19rem);
+    }
+
+    #illustration {
+
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-left: 33rem;
+            margin-top: -36rem;
+            padding-bottom: 16rem; //increase the space at the bottom of the img
+
+        }
+    }
+
+
+}
+
+.box {
+    img {
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        margin-left: 13rem;
+        margin-top: -16.2rem;
+        padding-bottom: 7rem;
+
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    margin-left: 46rem;
+    margin-top: -29rem;
+    font-family: 'Kumbh Sans', sans-serif;
+
+     img {
+        width:12px;
+        height:auto;
+        margin-left: 25rem;
+        :hover {
+                cursor: pointer;
+            }
+    }
+
+    #faq {
+        font-weight: 700;
+    }
+
+    #q1,
+    #q2,
+    #q3,
+    #q4,
+    #q5 {
+        font-weight: 400;
+        font-size: small;
+    }
+
+    #a1,
+    #a2,
+    #a3,
+    #a4,
+    #a5 {
+        font-size: small;
+    }
+
+    hr {
+        border: 0.5px solid lightgrey;
+        width: 28rem;
+    }
+}
+
+
+.attribution {
+    font-size: $font-size;
+    text-align: center;
+}
+
+.attribution a {
+    color: $link-color;
+}
